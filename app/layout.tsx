@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { cn } from "@/lib/utils"; // or '../../utils/utils' depending on folder depth
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${poppins.className} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${cn(poppins.className, "dark")} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
