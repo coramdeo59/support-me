@@ -9,6 +9,17 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', 'Arial', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
+        poppins: ['var(--font-poppins)', 'sans-serif']
+      },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

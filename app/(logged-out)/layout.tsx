@@ -1,10 +1,10 @@
-import { LightDarkToggle } from "@/components/ui/light-dark-toggle";
+import { LightDarkToggle } from "../../components/ui/light-dark-toggle";
 
 type Props = {
     children?: React.ReactNode;
 };
 
-export default function LoggedOutLayout({ children }: Props) {
+export default function auth({ children }: Props) {
     return (
         <>
         <div className="flex flex-col gap-4 min-h-screen p-24 items-center justify-center">{children}</div>
